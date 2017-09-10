@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TourGuideApp</string>
+    <string name="welcome_title">Welcome to</string>
+    <string name="city_name">Tel-Aviv</string>
+    <string name="title_activity_list_view">ListView</string>
+    <string name="title_activity_beaches_category">BeachesCategory</string>
+</resources>
