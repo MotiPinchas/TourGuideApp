@@ -18,6 +18,7 @@
             android:layout_width="144dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
             android:paddingBottom="16dp"
             android:paddingTop="16dp"
             android:text="@string/welcome_title"
@@ -25,17 +26,16 @@
             android:textColor="#ffffff"
             android:textSize="18sp"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteY="0dp" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/city_name_id"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="75dp"
             android:background="@drawable/tel_aviv_text_background"
+            android:gravity="center"
             android:text="@string/city_name"
             android:textAlignment="center"
-            android:gravity="center"
             android:textColor="#ffffff"
             android:textSize="48sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -44,59 +44,166 @@
     </android.support.constraint.ConstraintLayout>
 
 
-    <LinearLayout
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <TextView
+
+        <android.support.constraint.ConstraintLayout
             android:id="@+id/beaches_cat_id"
-            android:layout_width="340dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="16dp"
-            android:background="@color/category_Beaches"
-            android:elevation="0dp"
-            android:gravity="center"
-            android:padding="4dp"
-            android:text="Beaches"
-            android:textAlignment="center"
-            android:textSize="28sp" />
+            android:layout_width="332dp"
+            android:layout_height="92dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/category_frame"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/beach_cat"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Beach"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/imageView"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
             android:id="@+id/restaurant_cat_id"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@color/category_restaurants"
-            android:gravity="center"
-            android:padding="4dp"
-            android:text="Restaurants"
-            android:textAlignment="center"
-            android:textSize="28sp" />
+            android:layout_width="332dp"
+            android:layout_height="92dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/category_frame"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/beaches_cat_id"
+            android:layout_marginTop="8dp">
 
-        <TextView
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/restaurant_cat"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="restaurants"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/imageView2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
             android:id="@+id/history_cat_id"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@color/category_history"
-            android:gravity="center"
-            android:padding="4dp"
-            android:text="History"
-            android:textAlignment="center"
-            android:textSize="28sp" />
+            android:layout_width="332dp"
+            android:layout_height="92dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/category_frame"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/restaurant_cat_id"
+            android:layout_marginTop="8dp">
 
-        <TextView
-            android:id="@+id/entertainment_cat_id"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@color/category_entertainment"
-            android:gravity="center"
-            android:padding="4dp"
-            android:text="Entertainment"
-            android:textAlignment="center"
-            android:textSize="28sp" />
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/history_cat"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="history"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/imageView3"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
 
 
 </LinearLayout>

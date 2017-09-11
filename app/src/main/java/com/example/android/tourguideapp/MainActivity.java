@@ -1,10 +1,10 @@
 package com.example.android.tourguideapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Set beaches category to be clickable
-        TextView beaches = (TextView) findViewById(R.id.beaches_cat_id);
+        ConstraintLayout beaches = (ConstraintLayout) findViewById(R.id.beaches_cat_id);
         beaches.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Set restaurants category to be clickable
-        final TextView restaurants = (TextView) findViewById(R.id.restaurant_cat_id);
+        final ConstraintLayout restaurants = (ConstraintLayout) findViewById(R.id.restaurant_cat_id);
         restaurants.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Set history category to be clickable
-        final TextView history = (TextView) findViewById(R.id.history_cat_id);
+        final ConstraintLayout history = (ConstraintLayout) findViewById(R.id.history_cat_id);
         history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -42,15 +42,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(openHistoryIntent);
             }
         });
-
-        // Set entertainment category to be clickable
-        final TextView entertainment = (TextView) findViewById(R.id.entertainment_cat_id);
-        entertainment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent openEntertainmentIntent = new Intent(MainActivity.this,EntertainmentActivity.class);
-                startActivity(openEntertainmentIntent);
-            }
-        });
+//
+//        // Set entertainment category to be clickable
+//        final TextView entertainment = (TextView) findViewById(R.id.entertainment_cat_id);
+//        entertainment.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent openEntertainmentIntent = new Intent(MainActivity.this,EntertainmentActivity.class);
+//                startActivity(openEntertainmentIntent);
+//            }
+//        });
     }
 }
