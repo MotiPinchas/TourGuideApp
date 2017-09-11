@@ -7,4 +7,5 @@
     <color name="category_restaurants">#FFF0B2</color>
     <color name="category_history">#BCAAA4</color>
     <color name="category_entertainment">#B0BEC5</color>
+    <color name="item_background">#C5CAE9</color>
 </resources>

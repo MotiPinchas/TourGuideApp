@@ -8,21 +8,41 @@
     android:orientation="vertical"
     tools:context="com.example.android.tourguideapp.MainActivity">
 
-    <TextView
-        android:id="@+id/welcome_string_id"
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="@string/welcome_title"
-        android:textSize="24sp" />
+        android:layout_height="188dp"
+        android:background="@drawable/tel_aviv_israel">
 
-    <TextView
-        android:id="@+id/city_name_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/city_name"
-        android:textAlignment="center"
-        android:textSize="44sp" />
+        <TextView
+            android:id="@+id/welcome_string_id"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/welcome_title"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/city_name_id"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/tel_aviv_text_background"
+            android:text="@string/city_name"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,10 +51,11 @@
 
         <TextView
             android:id="@+id/beaches_cat_id"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_width="340dp"
+            android:layout_height="100dp"
             android:layout_marginTop="16dp"
             android:background="@color/category_Beaches"
+            android:elevation="0dp"
             android:gravity="center"
             android:padding="4dp"
             android:text="Beaches"
