@@ -8,11 +8,14 @@ public class Site {
 
     String mSiteTitle;
     int mImageResourceId;
+    String mSiteDescription;
+
 
     // Constructor function
-    public Site(String siteTitle, int imageResourceId) {
+    public Site(String siteTitle, int imageResourceId,String siteDescription) {
         mSiteTitle = siteTitle;
         mImageResourceId = imageResourceId;
+        mSiteDescription = siteDescription;
     }
 
     // Method that returns the title
@@ -25,14 +28,17 @@ public class Site {
         return mImageResourceId;
     }
 
-    // Method that create a log file for debugging
-
+    // Method that returns the title
+    public String getSiteDescription() {
+        return mSiteDescription;
+    }
 
     @Override
     public String toString() {
         return "Site{" +
                 "mSiteTitle='" + mSiteTitle + '\'' +
                 ", mImageResourceId=" + mImageResourceId +
+                ", mSiteDescription='" + mSiteDescription + '\'' +
                 '}';
     }
 }

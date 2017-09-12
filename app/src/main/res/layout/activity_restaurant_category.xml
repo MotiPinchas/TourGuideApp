@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.tourguideapp.RestaurantCategory">
+    tools:context="com.example.android.tourguideapp.RestaurantCategory"
+    android:orientation="vertical">
 
 
     <TextView
@@ -12,9 +13,16 @@
         android:layout_height="80dp"
         android:background="@color/category_restaurants"
         android:gravity="center"
-        android:padding="4dp"
         android:text="Restaurants"
         android:textAlignment="center"
         android:textSize="28sp" />
 
-</android.support.constraint.ConstraintLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/restaurant_list_id"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"/>
+
+</LinearLayout>

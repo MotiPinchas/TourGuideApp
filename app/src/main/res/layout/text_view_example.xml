@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text_example_id"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="16dp"
+    android:background="@drawable/category_frame"
+    android:gravity="center_vertical"
+    android:text="City name"
+    android:textAlignment="center"
+    android:textAllCaps="true"
+    android:textSize="38sp">
+
+</TextView>
