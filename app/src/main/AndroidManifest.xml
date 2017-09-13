@@ -19,7 +19,6 @@
         <activity android:name=".BeachesCategory" />
         <activity android:name=".RestaurantCategory" />
         <activity android:name=".HistoryActivity" />
-        <activity android:name=".EntertainmentActivity"></activity>
     </application>
 
 </manifest>

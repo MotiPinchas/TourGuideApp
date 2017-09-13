@@ -4,25 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.tourguideapp.RestaurantCategory"
-    android:orientation="vertical">
-
+    android:orientation="vertical"
+    tools:context="com.example.android.tourguideapp.BeachesCategory">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@color/category_restaurants"
+        android:layout_height="40dp"
+        android:background="@drawable/tel_aviv_text_background"
         android:gravity="center"
-        android:text="Restaurants"
+        android:text="Title"
         android:textAlignment="center"
-        android:textSize="28sp" />
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
 
     <ListView
+        android:id="@+id/list_id"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:id="@+id/restaurant_list_id"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp"/>
+        android:orientation="vertical">
 
+    </ListView>
 </LinearLayout>

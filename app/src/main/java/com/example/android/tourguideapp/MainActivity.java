@@ -42,15 +42,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(openHistoryIntent);
             }
         });
-//
-//        // Set entertainment category to be clickable
-//        final TextView entertainment = (TextView) findViewById(R.id.entertainment_cat_id);
-//        entertainment.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent openEntertainmentIntent = new Intent(MainActivity.this,EntertainmentActivity.class);
-//                startActivity(openEntertainmentIntent);
-//            }
-//        });
+
     }
 }

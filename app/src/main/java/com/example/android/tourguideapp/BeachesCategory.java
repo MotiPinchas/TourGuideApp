@@ -2,6 +2,7 @@ package com.example.android.tourguideapp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -10,7 +11,7 @@ public class BeachesCategory extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_beaches_category);
+        setContentView(R.layout.sites_list_view);
 
         // Set a list view for the beach list
         final ArrayList<Site> sites = new ArrayList<Site>();
@@ -30,13 +31,32 @@ public class BeachesCategory extends AppCompatActivity {
                         "especially for playing Matkot game. Also" +
                         "this place none as the celebrity beach, " +
                         "so if you will be good you might see one of them ")));
-        sites.add((new Site("Jafa", R.drawable.jafa_b,
+        sites.add((new Site("Jaffa", R.drawable.jafa_b,
                 "This small beach is located in a beautiful place, at the " +
                         "back you can find to old city of Jafa. " +
                         "So take a short tour in the old city, buy yourself a " +
                         "tasty pastry from Abolafia tabon and go to the beach " +
                         "and enjoy the sunset ")));
+        sites.add((new Site("Jerusalem", R.drawable.beach_cat,
+                "This small beach is located in a beautiful place, at the " +
+                        "back you can find to old city of Jafa. " +
+                        "So take a short tour in the old city, buy yourself a " +
+                        "tasty pastry from Abolafia tabon and go to the beach " +
+                        "and enjoy the sunset ")));
+        sites.add((new Site("Quiet beach", R.drawable.gordon_b,
+                "This small beach is located in a beautiful place, at the " +
+                        "back you can find to old city of Jafa. " +
+                        "So take a short tour in the old city, buy yourself a " +
+                        "tasty pastry from Abolafia tabon and go to the beach " +
+                        "and enjoy the sunset ")));
+        // Declare Adapter
+        SiteAdapter siteItemAdapter = new SiteAdapter(this,sites);
 
+        // Declare ListView
+        ListView itemListView = (ListView) findViewById(R.id.list_id);
+
+        // Apply method
+        itemListView.setAdapter(siteItemAdapter);
 
         // Log for debug
         //Log.v("BeachesCtegory", sites.get(0).toString());
