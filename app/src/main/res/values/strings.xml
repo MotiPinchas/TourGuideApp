@@ -4,4 +4,14 @@
     <string name="city_name">Tel - Aviv</string>
     <string name="title_activity_list_view">ListView</string>
     <string name="title_activity_beaches_category">BeachesCategory</string>
+
+    <!-- Category name for Beaches -->
+    <string name="category_beaches">Beach</string>
+
+    <!-- Category name for Restaurants -->
+    <string name="category_restaurants">Restaurants</string>
+
+    <!-- Category name for History -->
+    <string name="category_history">History</string>
+
 </resources>
