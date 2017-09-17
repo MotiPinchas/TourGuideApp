@@ -13,13 +13,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         // Set beaches category to be clickable
         ConstraintLayout beaches = (ConstraintLayout) findViewById(R.id.beaches_cat_id);
         beaches.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent openBeachesIntent = new Intent(MainActivity.this, BeachesCategory.class);
-                startActivity(openBeachesIntent);
+                Intent openSiteCategoryIntent = new Intent(MainActivity.this, SiteCategoryClass.class);
+                startActivity(openSiteCategoryIntent);
             }
         });
 
@@ -28,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
         restaurants.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent openRestaurantIntent = new Intent(MainActivity.this,RestaurantCategory.class);
-                startActivity(openRestaurantIntent);
+                Intent openSiteCategoryIntent = new Intent(MainActivity.this, SiteCategoryClass.class);
+                startActivity(openSiteCategoryIntent);
             }
         });
 
@@ -38,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
         history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent openHistoryIntent = new Intent(MainActivity.this,HistoryActivity.class);
-                startActivity(openHistoryIntent);
+                Intent openSiteCategoryIntent = new Intent(MainActivity.this, SiteCategoryClass.class);
+                startActivity(openSiteCategoryIntent);
             }
         });
 

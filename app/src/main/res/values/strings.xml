@@ -6,6 +6,9 @@
     <string name="title_activity_beaches_category">BeachesCategory</string>
 
     <!-- Category name for Beaches -->
+    <string name="site_category">Site category</string>
+
+    <!-- Category name for Beaches -->
     <string name="category_beaches">Beach</string>
 
     <!-- Category name for Restaurants -->

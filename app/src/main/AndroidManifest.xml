@@ -17,8 +17,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".BeachesCategory"
-            android:label="@string/category_beaches" />
+            android:name=".SiteCategoryClass"
+            android:label="@string/site_category" />
 
         <activity
             android:name=".RestaurantCategory"
