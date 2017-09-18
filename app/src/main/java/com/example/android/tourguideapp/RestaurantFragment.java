@@ -30,14 +30,14 @@ public class RestaurantFragment extends Fragment {
 
         // Declare the data - An array of cities
         ArrayList<Site> restaurants = new ArrayList<Site>();
-        restaurants.add(new Site("Toto", R.drawable.toto, "description"));
-        restaurants.add(new Site("Eat Meat", R.drawable.eat_meat, "description"));
-        restaurants.add(new Site("Kiki Humos", R.drawable.kiki, "description"));
-        restaurants.add(new Site("Thai-house", R.drawable.thilandi, "description"));
-        restaurants.add(new Site("Truck Delux", R.drawable.truck, "description"));
-        restaurants.add(new Site("The magician", R.drawable.hakosem, "description"));
-        restaurants.add(new Site("Frishman Sabich", R.drawable.sabich, "description"));
-        restaurants.add(new Site("Dizishake", R.drawable.milkshake, "description"));
+        restaurants.add(new Site("Toto", R.drawable.r_toto, "description"));
+        restaurants.add(new Site("Eat Meat", R.drawable.r_eatmeat, "description"));
+        restaurants.add(new Site("Kiki Humos", R.drawable.r_kiki, "description"));
+        restaurants.add(new Site("Thai-house", R.drawable.r_thilandi, "description"));
+        restaurants.add(new Site("Truck Delux", R.drawable.r_truck, "description"));
+        restaurants.add(new Site("The magician", R.drawable.r_kosem, "description"));
+        restaurants.add(new Site("Frishman Sabich", R.drawable.r_sabich, "description"));
+        restaurants.add(new Site("Dizishake", R.drawable.r_milkshake, "description"));
 
 
         // Declare Adapter - we need to declare the upper activity,

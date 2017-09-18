@@ -30,34 +30,34 @@ public class BeachesFragment extends Fragment {
         // Set a list view for the beach list
         final ArrayList<Site> sites = new ArrayList<Site>();
         // Add items to the list view
-        sites.add(new Site("Gordon", R.drawable.gordon_b,
+        sites.add(new Site("Gordon", R.drawable.b_gordon,
                 "This is a beautiful beach, placed at the end og Gordon street.\n " +
                         "You can find there:\n" +
                         "Good restaurants\n" +
                         "Volleyball courts\n" +
                         "City library"));
-        sites.add((new Site("Frishman", R.drawable.frishman_b,
+        sites.add((new Site("Frishman", R.drawable.b_frishman,
                 "This is a nice beach especially for families. " +
                         "Take a sit and relax from the rush day.\n")));
-        sites.add((new Site("Metzizim", R.drawable.metzizim_b,
+        sites.add((new Site("Metzizim", R.drawable.b_metzizim,
                 "This is a quite and small beach. It is placed in the " +
                         "northern area of the city. A lot of people come here" +
                         "especially for playing Matkot game. Also" +
                         "this place none as the celebrity beach, " +
                         "so if you will be good you might see one of them ")));
-        sites.add((new Site("Jaffa", R.drawable.jafa_b,
+        sites.add((new Site("Jaffa", R.drawable.b_jafa,
                 "This small beach is located in a beautiful place, at the " +
                         "back you can find to old city of Jafa. " +
                         "So take a short tour in the old city, buy yourself a " +
                         "tasty pastry from Abolafia tabon and go to the beach " +
                         "and enjoy the sunset ")));
-        sites.add((new Site("Jerusalem", R.drawable.beach_cat,
+        sites.add((new Site("Jerusalem", R.drawable.b_jerusalem,
                 "This small beach is located in a beautiful place, at the " +
                         "back you can find to old city of Jafa. " +
                         "So take a short tour in the old city, buy yourself a " +
                         "tasty pastry from Abolafia tabon and go to the beach " +
                         "and enjoy the sunset ")));
-        sites.add((new Site("Quiet beach", R.drawable.gordon_b,
+        sites.add((new Site("Quiet beach", R.drawable.b_quite_beach,
                 "This small beach is located in a beautiful place, at the " +
                         "back you can find to old city of Jafa. " +
                         "So take a short tour in the old city, buy yourself a " +

@@ -30,14 +30,14 @@ public class HistoryFragment extends Fragment {
 
         // Declare Array List
         ArrayList<Site> historicalPlaces = new ArrayList<>();
-        historicalPlaces.add(new Site("Old Jaffa", R.drawable.jaffa, "description"));
-        historicalPlaces.add(new Site("Rabin Square",R.drawable.rabi_square,"description"));
-        historicalPlaces.add(new Site("Tel Aviv museum",R.drawable.museum_tel_aviv,"description"));
-        historicalPlaces.add(new Site("Dizinguf Square",R.drawable.dizinguf_square,"description"));
-        historicalPlaces.add(new Site("Dizinguf center",R.drawable.center,"description"));
-        historicalPlaces.add(new Site("Yarkon Park",R.drawable.park,"description"));
-        historicalPlaces.add(new Site("Sarona",R.drawable.sarona,"description"));
-        historicalPlaces.add(new Site("SeaPort",R.drawable.seaport,"description"));
+        historicalPlaces.add(new Site("Old Jaffa", R.drawable.h_jaffa, "description"));
+        historicalPlaces.add(new Site("Rabin Square",R.drawable.h_rabin_square,"description"));
+        historicalPlaces.add(new Site("Tel Aviv museum",R.drawable.h_museum,"description"));
+        historicalPlaces.add(new Site("Dizinguf Square",R.drawable.h_dizingof_square,"description"));
+        historicalPlaces.add(new Site("Dizinguf center",R.drawable.h_dizingof_center,"description"));
+        historicalPlaces.add(new Site("Yarkon Park",R.drawable.h_park,"description"));
+        historicalPlaces.add(new Site("Sarona",R.drawable.h_sarona,"description"));
+        historicalPlaces.add(new Site("SeaPort",R.drawable.h_seaport,"description"));
 
         //Declare SiteAdapter
         SiteAdapter historyAdapter = new SiteAdapter(getActivity(),historicalPlaces);

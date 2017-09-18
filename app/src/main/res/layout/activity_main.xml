@@ -32,6 +32,7 @@
             android:id="@+id/city_name_id"
             android:layout_width="0dp"
             android:layout_height="75dp"
+
             android:background="@drawable/tel_aviv_text_background"
             android:gravity="center"
             android:text="@string/city_name"
@@ -77,6 +78,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -110,11 +112,11 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/category_frame"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/beaches_cat_id"
-            android:layout_marginTop="8dp">
+            app:layout_constraintTop_toBottomOf="@+id/beaches_cat_id">
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -161,11 +163,11 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/category_frame"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/restaurant_cat_id"
-            android:layout_marginTop="8dp">
+            app:layout_constraintTop_toBottomOf="@+id/restaurant_cat_id">
 
             <ImageView
                 android:id="@+id/imageView3"
