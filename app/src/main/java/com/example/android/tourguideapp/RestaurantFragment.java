@@ -6,7 +6,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -29,7 +31,7 @@ public class RestaurantFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.sites_list_view,container,false);
 
         // Declare the data - An array of cities
-        ArrayList<Site> restaurants = new ArrayList<Site>();
+        final ArrayList<Site> restaurants = new ArrayList<Site>();
         restaurants.add(new Site("Toto", R.drawable.r_toto, "description"));
         restaurants.add(new Site("Eat Meat", R.drawable.r_eatmeat, "description"));
         restaurants.add(new Site("Kiki Humos", R.drawable.r_kiki, "description"));
@@ -46,10 +48,20 @@ public class RestaurantFragment extends Fragment {
 
         // Declare list view - fragment does not have findViewById method therefore
         // we use rootView.findViewById() instead.
-        ListView restaurantList = (ListView) rootView.findViewById(R.id.list_id);
+        final ListView restaurantList = (ListView) rootView.findViewById(R.id.list_id);
 
         // Execute the adapter method from cityList ListView
         restaurantList.setAdapter(adapterRestaurant);
+
+        // Click option
+        restaurantList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                Site site = restaurants.get(position);
+                Toast.makeText(getContext(),site.getSiteTitle(),Toast.LENGTH_SHORT).show();
+            }
+        });
+
         return rootView;
 
     }

@@ -20,13 +20,6 @@
             android:name=".SiteCategoryClass"
             android:label="@string/site_category" />
 
-        <activity
-            android:name=".RestaurantCategory"
-            android:label="@string/category_restaurants" />
-
-        <activity
-            android:name=".HistoryActivity"
-            android:label="@string/category_history" />
     </application>
 
 </manifest>

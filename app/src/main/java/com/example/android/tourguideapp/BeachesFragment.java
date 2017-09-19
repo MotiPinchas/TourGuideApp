@@ -3,10 +3,13 @@ package com.example.android.tourguideapp;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -25,7 +28,7 @@ public class BeachesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         //Declare rootView
-        View rootView = inflater.inflate(R.layout.sites_list_view,container,false);
+        View rootView = inflater.inflate(R.layout.sites_list_view, container, false);
 
         // Set a list view for the beach list
         final ArrayList<Site> sites = new ArrayList<Site>();
@@ -64,7 +67,7 @@ public class BeachesFragment extends Fragment {
                         "tasty pastry from Abolafia tabon and go to the beach " +
                         "and enjoy the sunset ")));
         // Declare Adapter
-        SiteAdapter siteItemAdapter = new SiteAdapter(getActivity(),sites);
+        SiteAdapter siteItemAdapter = new SiteAdapter(getActivity(), sites);
 
         // Declare ListView
         ListView itemListView = (ListView) rootView.findViewById(R.id.list_id);
@@ -73,8 +76,24 @@ public class BeachesFragment extends Fragment {
         itemListView.setAdapter(siteItemAdapter);
 
         // Log for debug
-        //Log.v("BeachesCtegory", sites.get(0).toString());
+        //Log.v("BeachesCategory", sites.get(0).toString());
+
+
+        // Create a listItem click option
+        itemListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                Site site = sites.get(position);
+                Log.v("BeachesCategory", site.toString());
+
+                // ***** Toast *****
+                Toast.makeText(getContext(), site.getSiteTitle(), Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
         return rootView;
     }
+
 
 }
