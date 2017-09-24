@@ -1,6 +1,7 @@
 package com.example.android.tourguideapp;
 
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
@@ -17,14 +18,15 @@ public class SiteCategoryClass extends AppCompatActivity {
         ViewPager siteListViewPager = (ViewPager) findViewById(R.id.view_pager_id);
 
         // Create viewPagerAdapter
-        SiteListFragmentPagerAdapter adapter =new SiteListFragmentPagerAdapter(getSupportFragmentManager());
+        SiteListFragmentPagerAdapter adapter =new SiteListFragmentPagerAdapter(this,getSupportFragmentManager());
 
         // Apply the adapter
         siteListViewPager.setAdapter(adapter);
 
+        // Tab viewer
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tab_id);
 
-//        // Apply the chosen fragment from the relevant activity
-//        getSupportFragmentManager().beginTransaction().replace(R.id.container,new BeachesFragment()).commit();
+        tabLayout.setupWithViewPager(siteListViewPager);
 
 
     }
