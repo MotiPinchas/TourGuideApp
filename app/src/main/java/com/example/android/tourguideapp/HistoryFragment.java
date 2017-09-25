@@ -1,6 +1,7 @@
 package com.example.android.tourguideapp;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -59,6 +60,13 @@ public class HistoryFragment extends Fragment {
 
                 // ***** Toast *****
                 Toast.makeText(getContext(), site.getSiteTitle(), Toast.LENGTH_SHORT).show();
+
+                // Open an Site activity intent
+                Intent siteIntent = new Intent(getActivity(),SiteActivity.class);
+                siteIntent.putExtra("SITE_TITLE",site.getSiteTitle());
+                siteIntent.putExtra("SITE_IMAGE",site.getImageResId());
+                siteIntent.putExtra("SITE_DESCRIPTION",site.getSiteDescription());
+                startActivity(siteIntent);
             }
         });
 

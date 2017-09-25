@@ -1,6 +1,7 @@
 package com.example.android.tourguideapp;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -75,8 +76,7 @@ public class BeachesFragment extends Fragment {
         // Apply method
         itemListView.setAdapter(siteItemAdapter);
 
-        // Log for debug
-        //Log.v("BeachesCategory", sites.get(0).toString());
+
 
 
         // Create a listItem click option
@@ -85,10 +85,15 @@ public class BeachesFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 Site site = sites.get(position);
                 Log.v("BeachesCategory", site.toString());
-
                 // ***** Toast *****
                 Toast.makeText(getContext(), site.getSiteTitle(), Toast.LENGTH_SHORT).show();
 
+                // Open an Site activity intent
+                Intent siteIntent = new Intent(getActivity(),SiteActivity.class);
+                siteIntent.putExtra("SITE_TITLE",site.getSiteTitle());
+                siteIntent.putExtra("SITE_IMAGE",site.getImageResId());
+                siteIntent.putExtra("SITE_DESCRIPTION",site.getSiteDescription());
+                startActivity(siteIntent);
             }
         });
 
