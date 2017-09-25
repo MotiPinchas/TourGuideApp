@@ -1,6 +1,7 @@
 package com.example.android.tourguideapp;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,8 @@ import java.util.ArrayList;
  */
 
 public class SiteAdapter extends ArrayAdapter<Site> {
+
+
 
     //Constructor method. Super gives us the data from the upper class.
     public SiteAdapter(Activity context, ArrayList<Site> Sites) {
@@ -37,9 +40,14 @@ public class SiteAdapter extends ArrayAdapter<Site> {
         TextView titleTextView = (TextView) listItemView.findViewById(R.id.item_list_text_title_id);
         titleTextView.setText(currentSite.getSiteTitle());
 
+
         // Connect the description TextView
         TextView descriptionTextView = (TextView) listItemView.findViewById(R.id.item_list_text_description_id);
         descriptionTextView.setText(currentSite.getSiteDescription());
+
+        // Change text font
+        Typeface twoDTypeFace = Typeface.createFromAsset(getContext().getAssets(),"2Dumb.ttf");
+        titleTextView.setTypeface(twoDTypeFace);
 
         //Connect the ImageView
         ImageView imageView =(ImageView) listItemView.findViewById(R.id.item_list_image_id);

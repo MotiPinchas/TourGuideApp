@@ -80,6 +80,7 @@
 
 
             <TextView
+                android:id="@+id/beach_text_view_main"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -94,7 +95,8 @@
                 android:text="Beach"
                 android:textAlignment="center"
                 android:textAllCaps="true"
-                android:textSize="24sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toRightOf="@+id/imageView"
                 app:layout_constraintRight_toRightOf="parent"
@@ -132,6 +134,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/restaurant_text_view_main"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -146,7 +149,8 @@
                 android:text="restaurants"
                 android:textAlignment="center"
                 android:textAllCaps="true"
-                android:textSize="24sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toRightOf="@+id/imageView2"
                 app:layout_constraintRight_toRightOf="parent"
@@ -183,6 +187,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/history_text_view_main"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -197,7 +202,8 @@
                 android:text="history"
                 android:textAlignment="center"
                 android:textAllCaps="true"
-                android:textSize="24sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toRightOf="@+id/imageView3"
                 app:layout_constraintRight_toRightOf="parent"

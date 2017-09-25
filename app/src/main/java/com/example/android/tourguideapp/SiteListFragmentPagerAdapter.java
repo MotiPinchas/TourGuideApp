@@ -39,7 +39,7 @@ public class SiteListFragmentPagerAdapter extends FragmentPagerAdapter {
         return 3;
     }
 
-    //
+    // Tab
     @Override
     public CharSequence getPageTitle(int position) {
         if (position == 0) {

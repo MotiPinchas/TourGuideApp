@@ -25,7 +25,8 @@
             android:layout_margin="8dp"
             android:text="site title"
             android:textAllCaps="true"
-            android:textSize="24sp" />
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/item_list_text_description_id"
