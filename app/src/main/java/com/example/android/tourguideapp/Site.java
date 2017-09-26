@@ -40,5 +40,6 @@ public class Site {
                 ", mImageResourceId=" + mImageResourceId +
                 ", mSiteDescription='" + mSiteDescription + '\'' +
                 '}';
+
     }
 }
